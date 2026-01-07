@@ -1,0 +1,186 @@
+{
+    "info": {
+        "name": "Medusa Store Custom Modules",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Sync",
+            "item": [
+                {
+                    "name": "Trigger Product Sync",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:9000/admin/sync",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "admin",
+                                "sync"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Reviews",
+            "item": [
+                {
+                    "name": "Get Products (to find ID)",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-publishable-key",
+                                "value": "test",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost:9000/store/products?limit=1",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "store",
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "limit",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Review",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "x-publishable-key",
+                                "value": "test",
+                                "type": "text"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"rating\": 5,\n    \"comment\": \"Great product!\",\n    \"product_id\": \"PRODUCT_ID_HERE\"\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:9000/store/reviews",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "store",
+                                "reviews"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List Store Reviews (Approved)",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "x-publishable-key",
+                                "value": "test",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "http://localhost:9000/store/reviews?product_id=PRODUCT_ID_HERE",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "store",
+                                "reviews"
+                            ],
+                            "query": [
+                                {
+                                    "key": "product_id",
+                                    "value": "PRODUCT_ID_HERE",
+                                    "description": "Optional: Filter by product ID"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List Admin Reviews (All)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:9000/admin/reviews",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "admin",
+                                "reviews"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Approve Review",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "http://localhost:9000/admin/reviews/:id/approve",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "9000",
+                            "path": [
+                                "admin",
+                                "reviews",
+                                ":id",
+                                "approve"
+                            ],
+                            "variable": [
+                                {
+                                    "key": "id",
+                                    "value": "REVIEW_ID_HERE"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+Product Id,Product Handle,Product Title,Product Status,Product Thumbnail,Product Sales Channel 1,Variant Id
+prod_01KEBD2292BDF6E7EXQ2T59PR5,sweatpants,Medusa Sweatpants,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAHE0N527AB9EXNSXV
+prod_01KEBD2292BDF6E7EXQ2T59PR5,sweatpants,Medusa Sweatpants,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AA0X7HVSG9B3Z5JNM3
+prod_01KEBD2292BDF6E7EXQ2T59PR5,sweatpants,Medusa Sweatpants,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AA8MT4APVH97Z21QED
+prod_01KEBD2292BDF6E7EXQ2T59PR5,sweatpants,Medusa Sweatpants,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAHD7RDDFCXRY38NSV
+prod_01KEBD2292BQTDC9JQGGGH29TZ,sweatshirt,Medusa Sweatshirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAWF5G0TY5N4SXX9P4
+prod_01KEBD2292BQTDC9JQGGGH29TZ,sweatshirt,Medusa Sweatshirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AA0B0MR3DK6YDNJNQM
+prod_01KEBD2292BQTDC9JQGGGH29TZ,sweatshirt,Medusa Sweatshirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AASMSWTYGPQFDE0HKZ
+prod_01KEBD2292BQTDC9JQGGGH29TZ,sweatshirt,Medusa Sweatshirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAS3ZEK0R6JM3PMWBB
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22A9VRTS8S0YB5XVW245
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22A9ZW30RW90X7B8AKPH
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22A9MFPGCZMWVM935TD9
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22A91YVF5103RNCTNKZX
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22A9CJEXGND7PYWWGK9A
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAGDAGH22Q2Y9N0NBH
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAGJ46XKR9NRCNEYMA
+prod_01KEBD2292HNG0A6T1E5DS6C1X,t-shirt,Medusa T-Shirt,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AA5SSY0GK9Q3QJP3BT
+prod_01KEBD2292W7P3XSV8CEGQY649,shorts,Medusa Shorts,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAZNYSKRZ2TF5QCTGW
+prod_01KEBD2292W7P3XSV8CEGQY649,shorts,Medusa Shorts,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AA5H18XGGJC37RCAZ3
+prod_01KEBD2292W7P3XSV8CEGQY649,shorts,Medusa Shorts,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAHQBZSP2KPQ353NH1
+prod_01KEBD2292W7P3XSV8CEGQY649,shorts,Medusa Shorts,published,https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png,sc_01KEBD20SBTFH4JXSXBF5BKA9W,variant_01KEBD22AAJBJWVGMXRW1KTNDE
+prod_01KEC1BG4B1HFT6XWD8VE4AC12,chanel-coco-noir-eau-de,Chanel Coco Noir Eau De,published,https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp,,variant_01KECFN9SFRNQBTFPMB6W95RV9
+prod_01KEC1BG4B7GCEHMNRTQ6QQWDD,red-nail-polish,Red Nail Polish,published,https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp,,variant_01KECFN9SEXTQ6767BD7SJ0MBF
+prod_01KEC1BG4BBDCTKX0MZZYD2JH3,red-lipstick,Red Lipstick,published,https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp,,variant_01KECFN9SEMB3GWCX416EF0WME
+prod_01KEC1BG4BCNHB9XTATW1ZAHK4,annibale-colombo-bed,Annibale Colombo Bed,published,https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp,,variant_01KECFN9SGNRY4AMC4HNNT85BD
+prod_01KEC1BG4BCWWFRMRE9SFHQFJD,bedside-table-african-cherry,Bedside Table African Cherry,published,https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp,,variant_01KECFN9SHP0RM3PRH37Z123PZ
+prod_01KEC1BG4BGJHQVMC4AF9RJT2T,dolce-shine-eau-de,Dolce Shine Eau de,published,https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp,,variant_01KECFN9SGTKC2FK4YPKE56SV6
+prod_01KEC1BG4BH6EDSS90N94YG3RZ,annibale-colombo-sofa,Annibale Colombo Sofa,published,https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp,,variant_01KECFN9SHPC4QYM3DV7PTYW0R
+prod_01KEC1BG4BN08DF41G5DQ3CJ4K,calvin-klein-ck-one,Calvin Klein CK One,published,https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp,,variant_01KECFN9SFV2FGXN8ZY8YVJMP9
+prod_01KEC1BG4BP2H9AM7FSKZ6T8XM,dior-jadore,Dior J'adore,published,https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp,,variant_01KECFN9SFPQ7ZD40979XEZBNM
+prod_01KEC1BG4BQYY8P6KCSFSVM5VV,essence-mascara-lash-princess,Essence Mascara Lash Princess,published,https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp,,variant_01KECFN9SDE1MCT0H1JRS3KDPC
+prod_01KEC1BG4BR8MB6ETNY0VZ58JQ,eyeshadow-palette-with-mirror,Eyeshadow Palette with Mirror,published,https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp,,variant_01KECFN9SDJ8ARWT9BNWQDFMPC
+prod_01KEC1BG4BSQM6EPEMYH6K48GM,gucci-bloom-eau-de,Gucci Bloom Eau de,published,https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp,,variant_01KECFN9SGMAAHZJJKKF4CKE16
+prod_01KEC1BG4BTNYG892NMKAYCA3F,powder-canister,Powder Canister,published,https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp,,variant_01KECFN9SE5HPBPBPXSH7NW3BK
+prod_01KEC1BG4BVFB1HPH7JGNTSA47,wooden-bathroom-sink-with-mirror,Wooden Bathroom Sink With Mirror,published,https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/1.webp,,variant_01KECFN9SJR97C0W8VTZDTDVX0
+prod_01KEC1BG4BY2JTX2KS1YEEY405,knoll-saarinen-executive-conference-chair,Knoll Saarinen Executive Conference Chair,published,https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp,,variant_01KECFN9SHTQWR4KF7MXCGH44T
+prod_01KEC1BG7XN8084M8KHVPZHY21,apple,Apple,published,https://cdn.dummyjson.com/product-images/groceries/apple/1.webp,,variant_01KECFNA16MEJ0GW87618QFCSZ
+prod_01KEC1BG7XQVHG4TGHSR9ESYF5,beef-steak,Beef Steak,published,https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp,,variant_01KECFNA16S4A7VHKVC3F0TGYV
+prod_01KEC1BG7Y07SM639W58KTJY3Q,kiwi,Kiwi,published,https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp,,variant_01KECFNA188AH3M3082E4YWQA5
+prod_01KEC1BG7Y1D4RHQDTX8QCBG2C,green-chili-pepper,Green Chili Pepper,published,https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/1.webp,,variant_01KECFNA170X01AF3YD36GQHAW
+prod_01KEC1BG7Y1Z6CT1W0H7246305,ice-cream,Ice Cream,published,https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp,,variant_01KECFNA17V9FPNHB0T8CA0ZHB
+prod_01KEC1BG7YBW72925JQ79DZ69T,cooking-oil,Cooking Oil,published,https://cdn.dummyjson.com/product-images/groceries/cooking-oil/1.webp,,variant_01KECFNA16DK1BC3KBTQ8Y4SG5
+prod_01KEC1BG7YCXYX667XAFXNWP3D,honey-jar,Honey Jar,published,https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp,,variant_01KECFNA17EXQV1JNX427DQCZT
+prod_01KEC1BG7YGJ2RV6YM6EAJHX67,fish-steak,Fish Steak,published,https://cdn.dummyjson.com/product-images/groceries/fish-steak/1.webp,,variant_01KECFNA17HMXER4NCEGETXWSP
+prod_01KEC1BG7YHWY6TX6J2MQCZ29A,dog-food,Dog Food,published,https://cdn.dummyjson.com/product-images/groceries/dog-food/1.webp,,variant_01KECFNA17BPBBEJVE2HJ8MXBS
+prod_01KEC1BG7YJ544B14S6D4R96P0,green-bell-pepper,Green Bell Pepper,published,https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/1.webp,,variant_01KECFNA178CA9QR166W9WBRNJ
+prod_01KEC1BG7YMWN98ZVRSY4SB922,juice,Juice,published,https://cdn.dummyjson.com/product-images/groceries/juice/1.webp,,variant_01KECFNA180HJ4H8C3FX9S2G20
+prod_01KEC1BG7YNXF2DXCGW8RZNX6K,eggs,Eggs,published,https://cdn.dummyjson.com/product-images/groceries/eggs/1.webp,,variant_01KECFNA17KDFNYNN7Q3Q9W287
+prod_01KEC1BG7YQEVBG4F9K32969EF,cucumber,Cucumber,published,https://cdn.dummyjson.com/product-images/groceries/cucumber/1.webp,,variant_01KECFNA1670WTGKZ6NZFSDFDN
+prod_01KEC1BG7YRWCT1Y9Q8NQDXJAS,chicken-meat,Chicken Meat,published,https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp,,variant_01KECFNA16V3NZFFRTZH0DCKE5
+prod_01KEC1BG7YYFYVNDBY15Q7ZYR9,cat-food,Cat Food,published,https://cdn.dummyjson.com/product-images/groceries/cat-food/1.webp,,variant_01KECFNA16864YQ5K1APWK7ANJ
+prod_01KEC1BGPT0QHQPRF8WBMYDSXJ,protein-powder,Protein Powder,published,https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp,,variant_01KECFNAN2WHH04QZG4N1SGJ9N
+prod_01KEC1BGPT8MBG6MQFT999ATRF,lemon,Lemon,published,https://cdn.dummyjson.com/product-images/groceries/lemon/1.webp,,variant_01KECFNAN1Q282G3AZP04YCHGB
+prod_01KEC1BGPTAQEX6B8N9EPTZV6W,rice,Rice,published,https://cdn.dummyjson.com/product-images/groceries/rice/1.webp,,variant_01KECFNAN33FQ2995788VDKH73
+prod_01KEC1BGPTDNC6DMRRZBKR8JYQ,potatoes,Potatoes,published,https://cdn.dummyjson.com/product-images/groceries/potatoes/1.webp,,variant_01KECFNAN2ZKN085PH49159G22
+prod_01KEC1BGPTE0JENFPJD4YAWH07,red-onions,Red Onions,published,https://cdn.dummyjson.com/product-images/groceries/red-onions/1.webp,,variant_01KECFNAN2BXQMNYMXJRJY1KQR
+prod_01KEC1BGPTJ5TDA0R8PK496SN1,strawberry,Strawberry,published,https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp,,variant_01KECFNAN3E9SXQTC9H7A0ZKT7
+prod_01KEC1BGPTK758E6TC7V58M1Z2,milk,Milk,published,https://cdn.dummyjson.com/product-images/groceries/milk/1.webp,,variant_01KECFNAN1VDF1S1N5GT2E6E7A
+prod_01KEC1BGPTQ9W5W73EGM8Q59MF,soft-drinks,Soft Drinks,published,https://cdn.dummyjson.com/product-images/groceries/soft-drinks/1.webp,,variant_01KECFNAN3NMEEG2P4G96KWYTX
+prod_01KEC1BGPTRW3RXH0ZAXHX7NS1,nescafe-coffee,Nescafe Coffee,published,https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp,,variant_01KECFNAN2WQB13CGHME7NNPC6
+prod_01KEC1BGPTRXKX1QVRABQNN7QH,decoration-swing,Decoration Swing,published,https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/1.webp,,variant_01KECFNAN4RPSW8Y0SB8QFX39T
+prod_01KEC1BGPTSXQCCAPJM53F1VDS,water,Water,published,https://cdn.dummyjson.com/product-images/groceries/water/1.webp,,variant_01KECFNAN41R9V3CM2CMEX0777
+prod_01KEC1BGPTTPVF9YB1KKD0XPV6,tissue-paper-box,Tissue Paper Box,published,https://cdn.dummyjson.com/product-images/groceries/tissue-paper-box/1.webp,,variant_01KECFNAN415NT8NA18QWE3PT0
+prod_01KEC1BGPTYBDPXJ5Q2JKYJKS2,mulberry,Mulberry,published,https://cdn.dummyjson.com/product-images/groceries/mulberry/1.webp,,variant_01KECFNAN1JS72YMPNJ6JV5FXH
+prod_01KEC1BGPV817TT15CX2Z336WT,family-tree-photo-frame,Family Tree Photo Frame,published,https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp,,variant_01KECFNAN4H1QVXZ5VCYS7ZAVG
+prod_01KEC1BGPVKHRVHB6PBM7WFX9P,house-showpiece-plant,House Showpiece Plant,published,https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp,,variant_01KECFNAN5PP8SGKEFZJWBY6JD
+prod_01KEC1BGS61CZBX0SD1TNY9E82,bamboo-spatula,Bamboo Spatula,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/1.webp,,variant_01KECFNAV3ECGVQZX7AM2Y3JZ8
+prod_01KEC1BGS63CJCMKEWH57CB7YP,boxed-blender,Boxed Blender,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/1.webp,,variant_01KECFNAV4DEDSG2SSZJERQMGA
+prod_01KEC1BGS66JVYS40VY5WH9HBM,electric-stove,Electric Stove,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/1.webp,,variant_01KECFNAV489RB4MXJG943A2SW
+prod_01KEC1BGS66V97KRCDFPPKE48A,carbon-steel-wok,Carbon Steel Wok,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/carbon-steel-wok/1.webp,,variant_01KECFNAV40VCKNG8SEM406454
+prod_01KEC1BGS67JV4ZVY10Z636J6W,plant-pot,Plant Pot,published,https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/1.webp,,variant_01KECFNAV2JK7GZR9KDY92NKPC
+prod_01KEC1BGS6A6C841EWRHWWD9HV,black-whisk,Black Whisk,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/black-whisk/1.webp,,variant_01KECFNAV31DFD4PVVQCS56TVH
+prod_01KEC1BGS6AARC9BK1KBREB6YR,citrus-squeezer-yellow,Citrus Squeezer Yellow,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/citrus-squeezer-yellow/1.webp,,variant_01KECFNAV4XSCXFNA17SF282B7
+prod_01KEC1BGS6BAWXBZSMP0X6248T,egg-slicer,Egg Slicer,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/egg-slicer/1.webp,,variant_01KECFNAV45RGR684FJ20JJA8C
+prod_01KEC1BGS6K3X3B1M6KWGTM8Z1,table-lamp,Table Lamp,published,https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp,,variant_01KECFNAV3A71E0V43MAM25D3P
+prod_01KEC1BGS6K89WG69MNTXD2J8J,fine-mesh-strainer,Fine Mesh Strainer,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/1.webp,,variant_01KECFNAV5TJ4TF36H5GZP1GPP
+prod_01KEC1BGS6PXEZ7XR4MBMN3PF4,grater-black,Grater Black,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/grater-black/1.webp,,variant_01KECFNAV5WS2YWA5HJ2FPHR36
+prod_01KEC1BGS6TYXPP2YYTZD1ZRJ2,glass,Glass,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/glass/1.webp,,variant_01KECFNAV5FSZ6AB9WGPMWRNRT
+prod_01KEC1BGS6VR3JJCE26Z8W7YQ3,chopping-board,Chopping Board,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/1.webp,,variant_01KECFNAV4RRP22AXTTHJPXX03
+prod_01KEC1BGS6Y2P49PZYVTHWBQAN,black-aluminium-cup,Black Aluminium Cup,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/black-aluminium-cup/1.webp,,variant_01KECFNAV381CJY78RM06S9R84
+prod_01KEC1BGS6ZXXQ4YMD8B8B4E10,fork,Fork,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/1.webp,,variant_01KECFNAV55XX5DJZP556QM8T2
+prod_01KEC1BH6D05A196Z5APKN0TT2,microwave-oven,Microwave Oven,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/microwave-oven/1.webp,,variant_01KECFNBETC0YXNA08Z5F584AN
+prod_01KEC1BH6D3DBBBWEGPT54RQSF,plate,Plate,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/plate/1.webp,,variant_01KECFNBEV5JTACE6DVTJ3WG5B
+prod_01KEC1BH6D3Q053W3NRW26XWH0,slotted-turner,Slotted Turner,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/slotted-turner/1.webp,,variant_01KECFNBEWFSFPVR8AQRETQKRM
+prod_01KEC1BH6D4YTNBEKJXFR0F7FR,kitchen-sieve,Kitchen Sieve,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/kitchen-sieve/1.webp,,variant_01KECFNBETYPM3YAEKBTCRH5P0
+prod_01KEC1BH6D5WGD5HXFV9Q8MR87,knife,Knife,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/knife/1.webp,,variant_01KECFNBETBQW20RZVDKTR17BQ
+prod_01KEC1BH6D7M3KPAZYGW5ZG25W,spice-rack,Spice Rack,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/spice-rack/1.webp,,variant_01KECFNBEW3NT5F0ZX4Q8GHK9E
+prod_01KEC1BH6D9FA8Z9REDYZWZ9K0,pan,Pan,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/pan/1.webp,,variant_01KECFNBEVECQD9D5QP80J18ZF
+prod_01KEC1BH6DJ2V5B9DR35Y97GB3,spoon,Spoon,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/spoon/1.webp,,variant_01KECFNBEWGXBS28B9QA25KZZ4
+prod_01KEC1BH6DN0DA67VQYHX7WFJ0,hand-blender,Hand Blender,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/hand-blender/1.webp,,variant_01KECFNBESEDVSPNMNXDJ50WXY
+prod_01KEC1BH6DQAQJ5034AH34TXBR,lunch-box,Lunch Box,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/1.webp,,variant_01KECFNBETJE5BSEX737PNE0DE
+prod_01KEC1BH6DQQZHQAXSYTB7NQ84,red-tongs,Red Tongs,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/red-tongs/1.webp,,variant_01KECFNBEVC5AR0XFVTY6KNSTV
+prod_01KEC1BH6DTSS734MBQVWGPAPF,ice-cube-tray,Ice Cube Tray,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/ice-cube-tray/1.webp,,variant_01KECFNBESK7X1PK2S1QYA6TYZ
+prod_01KEC1BH6DW0W4KWJ05CBFZA8M,mug-tree-stand,Mug Tree Stand,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/mug-tree-stand/1.webp,,variant_01KECFNBEVPD3015HECRMFEJVE
+prod_01KEC1BH6DX7P9TKZWY2MR4YXY,silver-pot-with-glass-cap,Silver Pot With Glass Cap,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/silver-pot-with-glass-cap/1.webp,,variant_01KECFNBEW3BK70RFAANY9MG2M
+prod_01KEC1BH6ETQSZA94PNGDA997D,tray,Tray,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/tray/1.webp,,variant_01KECFNBEWN447MQ4B4FJQXXT4
+prod_01KEC1BH981TJM1APJ7G594SBJ,nike-air-jordan-1-red-and-black,Nike Air Jordan 1 Red And Black,published,https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp,,variant_01KECFNBP0QCGZA6F4N15EJAWS
+prod_01KEC1BH981TY80XMNZBKXS5Q8,men-check-shirt,Men Check Shirt,published,https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/1.webp,,variant_01KECFNBP0RMT8NF4GEBKEEK6N
+prod_01KEC1BH989BNYJJR24RSN721B,huawei-matebook-x-pro,Huawei Matebook X Pro,published,https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/1.webp,,variant_01KECFNBNYS3DP9ZH3HS0NSQBE
+prod_01KEC1BH98B31FGN877KDCBX75,yellow-peeler,Yellow Peeler,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/yellow-peeler/1.webp,,variant_01KECFNBNX8A0XBNFGV0FPFDV3
+prod_01KEC1BH98D5K4EE0J6VBABTKZ,nike-baseball-cleats,Nike Baseball Cleats,published,https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/1.webp,,variant_01KECFNBP1DG37AD71ZQAS5REH
+prod_01KEC1BH98ESW512XTAPG2RMQ1,apple-macbook-pro-14-inch-space-grey,Apple MacBook Pro 14 Inch Space Grey,published,https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/1.webp,,variant_01KECFNBNY1CFTKB8Z0XTFM4YS
+prod_01KEC1BH98F4NY66CCN4VS2YT5,blue-black-check-shirt,Blue & Black Check Shirt,published,https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp,,variant_01KECFNBNZWDSDY29C75E7RQ3W
+prod_01KEC1BH98GHZ0PGJX2AR0SDV7,new-dell-xps-13-9300-laptop,New DELL XPS 13 9300 Laptop,published,https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/1.webp,,variant_01KECFNBNZH9KVAZ2EAXACC55D
+prod_01KEC1BH98GZ897XJQE25G5SBX,man-short-sleeve-shirt,Man Short Sleeve Shirt,published,https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp,,variant_01KECFNBP0FWYV0TYJDW7JPR69
+prod_01KEC1BH98M8EF3DR09QGVY5NZ,gigabyte-aorus-men-tshirt,Gigabyte Aorus Men Tshirt,published,https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp,,variant_01KECFNBNZG7EKG35EM1FKXBJY
+prod_01KEC1BH98MWRE7EHCYJ4Y6YZ3,puma-future-rider-trainers,Puma Future Rider Trainers,published,https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp,,variant_01KECFNBP1TRC2FKE4VGTS3R5B
+prod_01KEC1BH98P0182YHCRS450Q94,lenovo-yoga-920,Lenovo Yoga 920,published,https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp,,variant_01KECFNBNY1CYT8EK8WTKC5KPB
+prod_01KEC1BH98QGX2KG97EASV8JQB,man-plaid-shirt,Man Plaid Shirt,published,https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/1.webp,,variant_01KECFNBNZW9FA775QT81GSDQ7
+prod_01KEC1BH98SX8WFQ3NF7G8HZY9,asus-zenbook-pro-dual-screen-laptop,Asus Zenbook Pro Dual Screen Laptop,published,https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/1.webp,,variant_01KECFNBNYE8SY07JETP0T702E
+prod_01KEC1BH98WN1J0S5BC4SREM9D,wooden-rolling-pin,Wooden Rolling Pin,published,https://cdn.dummyjson.com/product-images/kitchen-accessories/wooden-rolling-pin/1.webp,,variant_01KECFNBNX73X8YX46TDTNWQCT
+prod_01KEC1FN6J8FRNAA3542RZH2N2,motogp-cih1,MotoGP CI.H1,published,https://cdn.dummyjson.com/product-images/motorcycle/motogp-ci.h1/1.webp,,variant_01KECFNEVB444YB35XKBMY91C3
+prod_01KEC1FN6J9NWX16DW2K3WXJPV,beats-flex-wireless-earphones,Beats Flex Wireless Earphones,published,https://cdn.dummyjson.com/product-images/mobile-accessories/beats-flex-wireless-earphones/1.webp,,variant_01KECFNEV9HBY849Q8B7MKBFTQ
+prod_01KEC1FN6J9STEC8XZB5P44XDD,iphone-12-silicone-case-with-magsafe-plum,iPhone 12 Silicone Case with MagSafe Plum,published,https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/1.webp,,variant_01KECFNEVATQBDJQAMG6XCFG1Y
+prod_01KEC1FN6JAGZCBG9441T2VBPC,sportbike-motorcycle,Sportbike Motorcycle,published,https://cdn.dummyjson.com/product-images/motorcycle/sportbike-motorcycle/1.webp,,variant_01KECFNEVC41SST1PVCRVKDGRG
+prod_01KEC1FN6JDF3HJJPQ40QWGXV7,tv-studio-camera-pedestal,TV Studio Camera Pedestal,published,https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/1.webp,,variant_01KECFNEVA9RRQBC0A967WR7DE
+prod_01KEC1FN6JGBVXWFQGYF78PAPB,olay-ultra-moisture-shea-butter-body-wash,Olay Ultra Moisture Shea Butter Body Wash,published,https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp,,variant_01KECFNEVCB1PDJSHFDRHA2N9C
+prod_01KEC1FN6JHVVKC18TBC4FMZ95,scooter-motorcycle,Scooter Motorcycle,published,https://cdn.dummyjson.com/product-images/motorcycle/scooter-motorcycle/1.webp,,variant_01KECFNEVCCQ4WHVY6DK1HQZRW
+prod_01KEC1FN6JR30SP4Y65EQ17E37,apple-watch-series-4-gold,Apple Watch Series 4 Gold,published,https://cdn.dummyjson.com/product-images/mobile-accessories/apple-watch-series-4-gold/1.webp,,variant_01KECFNEV9JEWZQ8M5FHT0S8KP
+prod_01KEC1FN6JS48HBYDX2X1DW7F5,monopod,Monopod,published,https://cdn.dummyjson.com/product-images/mobile-accessories/monopod/1.webp,,variant_01KECFNEVA6P0VT0QBJ53KDJ4V
+prod_01KEC1FN6JS65QQ74RADY5EG2X,generic-motorcycle,Generic Motorcycle,published,https://cdn.dummyjson.com/product-images/motorcycle/generic-motorcycle/1.webp,,variant_01KECFNEVBDWC4AVR8CPWW4A4J
+prod_01KEC1FN6JSNHEWBG8MHKRCE3J,selfie-stick-monopod,Selfie Stick Monopod,published,https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-stick-monopod/1.webp,,variant_01KECFNEVA9CMPX643P67Z0AN1
+prod_01KEC1FN6JXMP88G7K91QD0808,kawasaki-z800,Kawasaki Z800,published,https://cdn.dummyjson.com/product-images/motorcycle/kawasaki-z800/1.webp,,variant_01KECFNEVB3E32C06QP2D2SEGA
+prod_01KEC1FN6JYPYCXT892MGSP3SN,vaseline-men-body-and-face-lotion,Vaseline Men Body and Face Lotion,published,https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp,,variant_01KECFNEVD0X2YFQN0PY0RFZ8N
+prod_01KEC1FN6JZP9H9538FBFM2W30,selfie-lamp-with-iphone,Selfie Lamp with iPhone,published,https://cdn.dummyjson.com/product-images/mobile-accessories/selfie-lamp-with-iphone/1.webp,,variant_01KECFNEVATQTPQCFBSP539F7H
+prod_01KEC1FN6JZTZ4G8RM1808PESH,attitude-super-leaves-hand-soap,Attitude Super Leaves Hand Soap,published,https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp,,variant_01KECFNEVCYHKDV4WG0JJFRH86
+prod_01KEC1FNSD1V241A0AXJZZBVKK,realme-x,Realme X,published,https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp,,variant_01KECFNG0RZK5SC7NJ9XM3A3W3
+prod_01KEC1FNSD24V4EFFVG182EJTN,iphone-13-pro,iPhone 13 Pro,published,https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/1.webp,,variant_01KECFNG0P4V07G3S59G9VYFK6
+prod_01KEC1FNSD3XMRZSM14J5QSS7H,iphone-5s,iPhone 5s,published,https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/1.webp,,variant_01KECFNG0NCJ0X750WQHHK9GSM
+prod_01KEC1FNSD5SGCBR8XNVC42PJM,oppo-k1,Oppo K1,published,https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/1.webp,,variant_01KECFNG0Q1MXH473M9MKNX8DZ
+prod_01KEC1FNSDAC0ZRRM8FDKRM16F,iphone-6,iPhone 6,published,https://cdn.dummyjson.com/product-images/smartphones/iphone-6/1.webp,,variant_01KECFNG0NG5NCXNX1RVP7JKGD
+prod_01KEC1FNSDC7GYEWF7HXMY3MTC,oppo-a57,Oppo A57,published,https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/1.webp,,variant_01KECFNG0QDXS1PD0XQ4E4JZ0G
+prod_01KEC1FNSDGZ6JETWT65D1R2AM,samsung-galaxy-s7,Samsung Galaxy S7,published,https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/1.webp,,variant_01KECFNG0S7EVX059SVADNXCKQ
+prod_01KEC1FNSDQEYK0WM5ZRGD7D39,realme-c35,Realme C35,published,https://cdn.dummyjson.com/product-images/smartphones/realme-c35/1.webp,,variant_01KECFNG0RQ67KV8DGMEYHWW29
+prod_01KEC1FNSDTYA3337FNJZDK5V5,oppo-f19-pro-plus,Oppo F19 Pro Plus,published,https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/1.webp,,variant_01KECFNG0Q33VD1X336348SRAN
+prod_01KEC1FNSDVG4KNVKS8BJMJZCV,iphone-x,iPhone X,published,https://cdn.dummyjson.com/product-images/smartphones/iphone-x/1.webp,,variant_01KECFNG0PZ1GAZJ03SHKC35BC
+prod_01KEC1FNSDW1ZXYPAC5BCR11XW,realme-xt,Realme XT,published,https://cdn.dummyjson.com/product-images/smartphones/realme-xt/1.webp,,variant_01KECFNG0RS4HEKBAV0KVVMJRZ
+prod_01KEC1FNSE7SZYDPBVSES2MMD7,samsung-galaxy-s10,Samsung Galaxy S10,published,https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp,,variant_01KECFNG0S9GAVSJWA7J6G6BEC
+prod_01KEC1FNSECSSCQJS7FZM40HZ0,vivo-v9,Vivo V9,published,https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/1.webp,,variant_01KECFNG0TNPC88NRH9AT1FWZE
+prod_01KEC1FNSEG2CNGKF5HS9H1T37,samsung-galaxy-s8,Samsung Galaxy S8,published,https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/1.webp,,variant_01KECFNG0S96ZHV9GJZM0M993S
+prod_01KEC1FNSEQE4W5B87T1Z8RR9Q,vivo-s1,Vivo S1,published,https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/1.webp,,variant_01KECFNG0TZ6DEPNY4CSSPN5DE
+prod_01KEC1FNW90MEBKBSP90Q8M7PS,football,Football,published,https://cdn.dummyjson.com/product-images/sports-accessories/football/1.webp,,variant_01KECFNG6ZXZVWA7R4XXS6J3RR
+prod_01KEC1FNW90YM4YHHF2CTE3SAD,metal-baseball-bat,Metal Baseball Bat,published,https://cdn.dummyjson.com/product-images/sports-accessories/metal-baseball-bat/1.webp,,variant_01KECFNG70HYB5WMEP3PXJ4D1Q
+prod_01KEC1FNW93M6NP1QHFH90HKJT,basketball,Basketball,published,https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp,,variant_01KECFNG6Y446B778BJG24RB38
+prod_01KEC1FNW94KB1QK8GQJDP5P9Z,baseball-glove,Baseball Glove,published,https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/1.webp,,variant_01KECFNG6YNZ12AX1V0YG0K85J
+prod_01KEC1FNW99Y22QY7S7J355XQS,cricket-bat,Cricket Bat,published,https://cdn.dummyjson.com/product-images/sports-accessories/cricket-bat/1.webp,,variant_01KECFNG6Z304S5YR5V8K33M2M
+prod_01KEC1FNW9DGGW4WXFX6S44CPH,american-football,American Football,published,https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp,,variant_01KECFNG6XQ3SZ3MFMYVYYXTWB
+prod_01KEC1FNW9E4NRPPERP1AG7ANF,golf-ball,Golf Ball,published,https://cdn.dummyjson.com/product-images/sports-accessories/golf-ball/1.webp,,variant_01KECFNG6Z5D2KYSQ1RFCR8F54
+prod_01KEC1FNW9KCZ15N5S6R6SER5N,baseball-ball,Baseball Ball,published,https://cdn.dummyjson.com/product-images/sports-accessories/baseball-ball/1.webp,,variant_01KECFNG6Y55E3GRW7HT57Z3GQ
+prod_01KEC1FNW9M19470MD303CXRA7,iron-golf,Iron Golf,published,https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp,,variant_01KECFNG70E2ENKSGJ212PFEA7
+prod_01KEC1FNW9Q9P8NVSJCXTS5M75,cricket-ball,Cricket Ball,published,https://cdn.dummyjson.com/product-images/sports-accessories/cricket-ball/1.webp,,variant_01KECFNG6YJG0053DCZXK6YPDP
+prod_01KEC1FNW9R4G8XCAD63W1CD1D,feather-shuttlecock,Feather Shuttlecock,published,https://cdn.dummyjson.com/product-images/sports-accessories/feather-shuttlecock/1.webp,,variant_01KECFNG6ZZ6RGW50QMQG0G648
+prod_01KEC1FNW9SFZGQH26EHYYRG0X,basketball-rim,Basketball Rim,published,https://cdn.dummyjson.com/product-images/sports-accessories/basketball-rim/1.webp,,variant_01KECFNG6YC88V00W9AKYB6CRE
+prod_01KEC1FNW9TP2F1ZMWQEH3QVBZ,cricket-wicket,Cricket Wicket,published,https://cdn.dummyjson.com/product-images/sports-accessories/cricket-wicket/1.webp,,variant_01KECFNG6ZQWKWFV3ED2D0CW12
+prod_01KEC1FNW9WBRE872KZX94JA7W,cricket-helmet,Cricket Helmet,published,https://cdn.dummyjson.com/product-images/sports-accessories/cricket-helmet/1.webp,,variant_01KECFNG6Z7J9FNVVCN6J4MV4T
+prod_01KEC1FNW9YV5BQG21F7TDCH60,vivo-x21,Vivo X21,published,https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/1.webp,,variant_01KECFNG6X605VHBTZR7AC46YS
+prod_01KEC1FP740CJ851Z9YP1341C3,party-glasses,Party Glasses,published,https://cdn.dummyjson.com/product-images/sunglasses/party-glasses/1.webp,,variant_01KECFNGXB6BAGKZS2J2T483TM
+prod_01KEC1FP742GNRYGSY91JY01A9,black-sun-glasses,Black Sun Glasses,published,https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/1.webp,,variant_01KECFNGXAPKA82H8Z6T5S6YA7
+prod_01KEC1FP743F1JHR5C6DMCNMES,samsung-galaxy-tab-s8-plus-grey,Samsung Galaxy Tab S8 Plus Grey,published,https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/1.webp,,variant_01KECFNGXCZ221DT46ZP1953NK
+prod_01KEC1FP744WX5CNSMEQG9AXMC,gray-dress,Gray Dress,published,https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp,,variant_01KECFNGXEJ1M7MBM8GB24H2GW
+prod_01KEC1FP7472JXE6K5JN2D08MH,sunglasses,Sunglasses,published,https://cdn.dummyjson.com/product-images/sunglasses/sunglasses/1.webp,,variant_01KECFNGXCARTW07M0BEQKW4EH
+prod_01KEC1FP74GYND16H5P3568G2T,samsung-galaxy-tab-white,Samsung Galaxy Tab White,published,https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/1.webp,,variant_01KECFNGXDMSYZS1Q2GJ5BTHWW
+prod_01KEC1FP74J5293BR187VT2A7W,green-and-black-glasses,Green and Black Glasses,published,https://cdn.dummyjson.com/product-images/sunglasses/green-and-black-glasses/1.webp,,variant_01KECFNGXBZXAE8Q9CRRD53H33
+prod_01KEC1FP74JPWCCHSBZ0K17WP2,tennis-racket,Tennis Racket,published,https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp,,variant_01KECFNGXAQQP49ZSRWHK9SYVY
+prod_01KEC1FP74PY55J1WXM7TY0TH1,short-frock,Short Frock,published,https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp,,variant_01KECFNGXENCYTZWFZ4CDZ52RF
+prod_01KEC1FP74QAAZAWKXNKG6NME4,ipad-mini-2021-starlight,iPad Mini 2021 Starlight,published,https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/1.webp,,variant_01KECFNGXCX5JCPJ9VSGHGK4GX
+prod_01KEC1FP74RN4E29NNECY7D86J,classic-sun-glasses,Classic Sun Glasses,published,https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp,,variant_01KECFNGXB354P2SD7M3T63S8Y
+prod_01KEC1FP74RVC72ZDPHC95V2NT,tennis-ball,Tennis Ball,published,https://cdn.dummyjson.com/product-images/sports-accessories/tennis-ball/1.webp,,variant_01KECFNGXA0DCGPMKYDNTP5APV
+prod_01KEC1FP74S4NN22P17YAXXGPJ,girl-summer-dress,Girl Summer Dress,published,https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp,,variant_01KECFNGXD8Z8QR3TPMQ7PB4VM
+prod_01KEC1FP74YAEPE09GBZD5A92Z,blue-frock,Blue Frock,published,https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp,,variant_01KECFNGXD4WX8JZ80GDSG5C5S
+prod_01KEC1FP74ZR9N0V0CG5SWYWKF,volleyball,Volleyball,published,https://cdn.dummyjson.com/product-images/sports-accessories/volleyball/1.webp,,variant_01KECFNGXAFSED7083Z2CCDG6B
+prod_01KEC1FPA60V6BVX952CS42G36,heshe-womens-leather-bag,Heshe Women's Leather Bag,published,https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp,,variant_01KECFNH3GC1QSC4YG0HHKASD7
+prod_01KEC1FPA625KTG1WBFGK0TEZ7,black-womens-gown,Black Women's Gown,published,https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp,,variant_01KECFNH3HSPTHCYQE7VTJHPQE
+prod_01KEC1FPA666R9YR7H9RKMMRXB,charger-sxt-rwd,Charger SXT RWD,published,https://cdn.dummyjson.com/product-images/vehicle/charger-sxt-rwd/1.webp,,variant_01KECFNH3FD6WJVMYV95CGGN6W
+prod_01KEC1FPA68Z29RTZ0JR8J5J90,durango-sxt-rwd,Durango SXT RWD,published,https://cdn.dummyjson.com/product-images/vehicle/durango-sxt-rwd/1.webp,,variant_01KECFNH3G1QHCPE8C1KF0QF1Q
+prod_01KEC1FPA6A6HXXM6PK8FV1Z4J,white-faux-leather-backpack,White Faux Leather Backpack,published,https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/1.webp,,variant_01KECFNH3H5NBNSB3Q2Q4AAQNE
+prod_01KEC1FPA6D7V8T9YXX7PG7AVH,prada-women-bag,Prada Women Bag,published,https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp,,variant_01KECFNH3H6CG4RV9GAYKCENSC
+prod_01KEC1FPA6D90KWYZ0QVR790XN,300-touring,300 Touring,published,https://cdn.dummyjson.com/product-images/vehicle/300-touring/1.webp,,variant_01KECFNH3FPKGS0ARPTJBCR7SX
+prod_01KEC1FPA6FQZPD63BZEYSE1D1,corset-with-black-skirt,Corset With Black Skirt,published,https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/1.webp,,variant_01KECFNH3JEG3E79VRMMTTZXCX
+prod_01KEC1FPA6HBAAWWRD2YV5PX5H,dodge-hornet-gt-plus,Dodge Hornet GT Plus,published,https://cdn.dummyjson.com/product-images/vehicle/dodge-hornet-gt-plus/1.webp,,variant_01KECFNH3FF8M6MW83SMRB2DHY
+prod_01KEC1FPA6JX5VGV2J2KKRE5TQ,women-handbag-black,Women Handbag Black,published,https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp,,variant_01KECFNH3HA1X5H7RX9BFTR899
+prod_01KEC1FPA6K6SWTQ1P9DANV9A1,tartan-dress,Tartan Dress,published,https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp,,variant_01KECFNH3E7FPSFEKM02M5S57K
+prod_01KEC1FPA6MDT7702ZJQEC9Z4C,corset-leather-with-skirt,Corset Leather With Skirt,published,https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/1.webp,,variant_01KECFNH3JE13PZDH930H1YBV8
+prod_01KEC1FPA6RMHT7T5JZVS0PTYF,blue-womens-handbag,Blue Women's Handbag,published,https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/1.webp,,variant_01KECFNH3GFWCSMVJXAZGX8GVB
+prod_01KEC1FPA6TFF8MC5AFYF1WN15,dress-pea,Dress Pea,published,https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/1.webp,,variant_01KECFNH3J92WHM7SVRS369EVZ
+prod_01KEC1FPA6TWR0CHGC75K0BGTC,pacifica-touring,Pacifica Touring,published,https://cdn.dummyjson.com/product-images/vehicle/pacifica-touring/1.webp,,variant_01KECFNH3GR957CHXFH965VD9V
+prod_01KEC1FPPJB79XS7QFQK41N0DX,green-crystal-earring,Green Crystal Earring,published,https://cdn.dummyjson.com/product-images/womens-jewellery/green-crystal-earring/1.webp,,variant_01KECFNHMCNE8WZ8JKB40FPD1H
+prod_01KEC1FPPJKXGEAYZ8RCVMAAY6,marni-red-black-suit,Marni Red & Black Suit,published,https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/1.webp,,variant_01KECFNHMC43B23H7WX8HJNX1E
+prod_01KEC1FPPK1PNRKP3DN1PASTYV,iwc-ingenieur-automatic-steel,IWC Ingenieur Automatic Steel,published,https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/1.webp,,variant_01KECFNHMFT82YKBNYEGN6CZQT
+prod_01KEC1FPPK2MZ58WXQ5S5HNBZ3,womens-wrist-watch,Women's Wrist Watch,published,https://cdn.dummyjson.com/product-images/womens-watches/women's-wrist-watch/1.webp,,variant_01KECFNHMGRNXC45HQ3PSE61SM
+prod_01KEC1FPPK42QZFWS0ZX88PWDM,green-oval-earring,Green Oval Earring,published,https://cdn.dummyjson.com/product-images/womens-jewellery/green-oval-earring/1.webp,,variant_01KECFNHMDADY4RW5480S82YFQ
+prod_01KEC1FPPK6HH1RMWSPWHJ7B9C,calvin-klein-heel-shoes,Calvin Klein Heel Shoes,published,https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp,,variant_01KECFNHME6D2B5TRX8QNFM9XG
+prod_01KEC1FPPK7D97YSJGNKKF4QSA,black-brown-slipper,Black & Brown Slipper,published,https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/1.webp,,variant_01KECFNHMDGEHFCYQQTWRSAJXK
+prod_01KEC1FPPK8SYS26PR6F5V53BR,golden-shoes-woman,Golden Shoes Woman,published,https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/1.webp,,variant_01KECFNHMEEZRC2PXF5WMCJT86
+prod_01KEC1FPPKGNXRKGBW2ACGAQC9,watch-gold-for-women,Watch Gold for Women,published,https://cdn.dummyjson.com/product-images/womens-watches/watch-gold-for-women/1.webp,,variant_01KECFNHMG626NM8BKCAXE2H44
+prod_01KEC1FPPKPRZG5MJA66ZWRDEM,rolex-cellini-moonphase,Rolex Cellini Moonphase,published,https://cdn.dummyjson.com/product-images/womens-watches/rolex-cellini-moonphase/1.webp,,variant_01KECFNHMF5XE0KHMMQEZ27XFV
+prod_01KEC1FPPKR1187DMQCVYSV8EX,tropical-earring,Tropical Earring,published,https://cdn.dummyjson.com/product-images/womens-jewellery/tropical-earring/1.webp,,variant_01KECFNHMDNYZ1ZR6XR1RAE647
+prod_01KEC1FPPKV0345B5133BQ2YRV,rolex-datejust-women,Rolex Datejust Women,published,https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/1.webp,,variant_01KECFNHMF9EVBB6D6NR4GP1CH
+prod_01KEC1FPPKWMV222C84DGNZD79,red-shoes,Red Shoes,published,https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/1.webp,,variant_01KECFNHMF8BYDCWQ05YHMFZ2J
+prod_01KEC1FPPKZKY7WCKWE06E61TX,pampi-shoes,Pampi Shoes,published,https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/1.webp,,variant_01KECFNHME8KYQRP10PGGHZXA2
