@@ -10,26 +10,58 @@ export const GET = async (req: MedusaRequest, res: MedusaResponse) => {
   let categories = []
   let collections = []
   try {
-    const catRepo = container.resolve("categoryRepository") as any
-    const qbCat = catRepo.createQueryBuilder("c")
-    qbCat.where("c.metadata ->> 'synced_from' = :src", { src: "dummyjson" })
-    const categoryRows = await qbCat.getMany()
-    categories = categoryRows.map((c: any) => ({ id: c.id, name: c.name, handle: c.handle, metadata: c.metadata }))
-  } catch (e) {
-    console.warn("categoryRepository not available in current runtime; cannot list categories via API.", e?.message || e)
+    const remoteQuery = container.resolve("remoteQuery")
+
+    // Fetch Categories
+    const catQuery = {
+      entryPoint: "product_category",
+      fields: ["id", "name", "handle", "metadata"],
+      variables: {
+        filters: {
+          metadata: { synced_from: "dummyjson" }
+        },
+        limit: 1000
+      }
+    }
+    const catResult = await remoteQuery(catQuery)
+    categories = Array.isArray(catResult) ? catResult : (catResult.rows || catResult.data || [])
+
+    // Fetch Collections
+    const collQuery = {
+      entryPoint: "product_collection",
+      fields: ["id", "title", "handle", "metadata"],
+      variables: {
+        filters: {
+          metadata: { synced_from: "dummyjson" }
+        },
+        limit: 1000
+      }
+    }
+    const collResult = await remoteQuery(collQuery)
+    collections = Array.isArray(collResult) ? collResult : (collResult.rows || collResult.data || [])
+
+    // Fetch Last Synced Time (latest updated_at of a synced product)
+    const lastSyncQuery = {
+      entryPoint: "product",
+      fields: ["updated_at"],
+      variables: {
+        filters: {
+          metadata: { synced_from: "dummyjson" }
+        },
+        order: { updated_at: "DESC" },
+        limit: 1
+      }
+    }
+    const lastSyncResult = await remoteQuery(lastSyncQuery)
+    const lastProduct = Array.isArray(lastSyncResult) ? lastSyncResult[0] : (lastSyncResult.rows?.[0] || lastSyncResult.data?.[0])
+
+    var last_synced_at = lastProduct ? lastProduct.updated_at : null
+
+  } catch (e: any) {
+    console.warn("Failed to query stats via remoteQuery:", e.message)
   }
 
-  try {
-    const collRepo = container.resolve("productCollectionRepository") as any
-    const qbColl = collRepo.createQueryBuilder("p")
-    qbColl.where("p.metadata ->> 'synced_from' = :src", { src: "dummyjson" })
-    const collectionRows = await qbColl.getMany()
-    collections = collectionRows.map((c: any) => ({ id: c.id, title: c.title, handle: c.handle, metadata: c.metadata }))
-  } catch (e) {
-    console.warn("productCollectionRepository not available in current runtime; cannot list collections via API.", e?.message || e)
-  }
-
-  res.json({ categories, collections })
+  res.json({ categories, collections, last_synced_at })
 }
 
 // POST /admin/sync/dummyjson -> trigger a sync run (async)

@@ -1,30 +1,28 @@
-import {
-    MedusaRequest,
-    MedusaResponse,
-} from "@medusajs/framework/http"
-import { REVIEW_MODULE } from "../../../modules/reviews"
+import { MedusaRequest, MedusaResponse } from "@medusajs/framework/http"
 
 export const GET = async (req: MedusaRequest, res: MedusaResponse) => {
-    const reviewModuleService = req.scope.resolve(REVIEW_MODULE)
+    const container = req.scope
+    const remoteQuery = container.resolve("remoteQuery")
 
-    const filters: any = {}
-    if (req.query.status) {
-        filters.status = req.query.status
-    }
-    if (req.query.product_id) {
-        filters.product_id = req.query.product_id
-    }
+    try {
+        const { product_id } = req.query
 
-    const [reviews, count] = await reviewModuleService.listAndCountReviews(
-        filters,
-        {
-            take: Number(req.query.limit) || 50,
-            skip: Number(req.query.offset) || 0,
-            order: { created_at: "DESC" }
+        const variables: any = { limit: 100, skip: 0 }
+        if (product_id) {
+            variables.filters = { product_id }
         }
-    )
 
-    res.json({ reviews, count })
+        const query = {
+            entryPoint: "review",
+            fields: ["*", "product.*"],
+            variables
+        }
+
+        const result = await remoteQuery(query)
+        const reviews = Array.isArray(result) ? result : (result.rows || result.data || [])
+
+        res.json({ reviews })
+    } catch (e: any) {
+        res.status(500).json({ message: "Failed to fetch reviews", error: e.message })
+    }
 }
-
-export const AUTHENTICATE = false

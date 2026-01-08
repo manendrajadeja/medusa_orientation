@@ -1,0 +1,45 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AUTHENTICATE = exports.GET = exports.POST = void 0;
+const reviews_1 = require("../../../modules/reviews");
+const validators_1 = require("./validators");
+const POST = async (req, res) => {
+    const { rating, comment, product_id } = validators_1.PostReviewSchema.parse(req.body);
+    const remoteQuery = req.scope.resolve("remoteQuery");
+    const query = {
+        entryPoint: "product",
+        fields: ["id"],
+        variables: {
+            filters: { id: product_id }
+        }
+    };
+    const { data } = await remoteQuery(query);
+    if (!data || data.length === 0) {
+        return res.status(404).json({ message: "Product not found" });
+    }
+    const reviewModuleService = req.scope.resolve(reviews_1.REVIEW_MODULE);
+    const review = await reviewModuleService.createReviews({
+        rating,
+        comment,
+        product_id,
+        status: "pending"
+    });
+    res.json({ review });
+};
+exports.POST = POST;
+const GET = async (req, res) => {
+    const reviewModuleService = req.scope.resolve(reviews_1.REVIEW_MODULE);
+    const filters = { status: "approved" };
+    if (req.query.product_id) {
+        filters.product_id = req.query.product_id;
+    }
+    const [reviews, count] = await reviewModuleService.listAndCountReviews(filters, {
+        take: Number(req.query.limit) || 20,
+        skip: Number(req.query.offset) || 0,
+        order: { created_at: "DESC" }
+    });
+    res.json({ reviews, count });
+};
+exports.GET = GET;
+exports.AUTHENTICATE = false;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm91dGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvYXBpL3N0b3JlL3Jldmlld3Mvcm91dGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBSUEsc0RBQXdEO0FBQ3hELDZDQUErQztBQUV4QyxNQUFNLElBQUksR0FBRyxLQUFLLEVBQUUsR0FBa0IsRUFBRSxHQUFtQixFQUFFLEVBQUU7SUFDbEUsTUFBTSxFQUFFLE1BQU0sRUFBRSxPQUFPLEVBQUUsVUFBVSxFQUFFLEdBQUcsNkJBQWdCLENBQUMsS0FBSyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsQ0FBQTtJQUV4RSxNQUFNLFdBQVcsR0FBRyxHQUFHLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxhQUFhLENBQUMsQ0FBQTtJQUNwRCxNQUFNLEtBQUssR0FBRztRQUNWLFVBQVUsRUFBRSxTQUFTO1FBQ3JCLE1BQU0sRUFBRSxDQUFDLElBQUksQ0FBQztRQUNkLFNBQVMsRUFBRTtZQUNQLE9BQU8sRUFBRSxFQUFFLEVBQUUsRUFBRSxVQUFVLEVBQUU7U0FDOUI7S0FDSixDQUFBO0lBRUQsTUFBTSxFQUFFLElBQUksRUFBRSxHQUFHLE1BQU0sV0FBVyxDQUFDLEtBQUssQ0FBQyxDQUFBO0lBQ3pDLElBQUksQ0FBQyxJQUFJLElBQUksSUFBSSxDQUFDLE1BQU0sS0FBSyxDQUFDLEVBQUUsQ0FBQztRQUM3QixPQUFPLEdBQUcsQ0FBQyxNQUFNLENBQUMsR0FBRyxDQUFDLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxFQUFFLG1CQUFtQixFQUFFLENBQUMsQ0FBQTtJQUNqRSxDQUFDO0lBRUQsTUFBTSxtQkFBbUIsR0FBRyxHQUFHLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyx1QkFBYSxDQUFDLENBQUE7SUFDNUQsTUFBTSxNQUFNLEdBQUcsTUFBTSxtQkFBbUIsQ0FBQyxhQUFhLENBQUM7UUFDbkQsTUFBTTtRQUNOLE9BQU87UUFDUCxVQUFVO1FBQ1YsTUFBTSxFQUFFLFNBQVM7S0FDcEIsQ0FBQyxDQUFBO0lBRUYsR0FBRyxDQUFDLElBQUksQ0FBQyxFQUFFLE1BQU0sRUFBRSxDQUFDLENBQUE7QUFDeEIsQ0FBQyxDQUFBO0FBMUJZLFFBQUEsSUFBSSxRQTBCaEI7QUFFTSxNQUFNLEdBQUcsR0FBRyxLQUFLLEVBQUUsR0FBa0IsRUFBRSxHQUFtQixFQUFFLEVBQUU7SUFDakUsTUFBTSxtQkFBbUIsR0FBRyxHQUFHLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyx1QkFBYSxDQUFDLENBQUE7SUFFNUQsTUFBTSxPQUFPLEdBQVEsRUFBRSxNQUFNLEVBQUUsVUFBVSxFQUFFLENBQUE7SUFDM0MsSUFBSSxHQUFHLENBQUMsS0FBSyxDQUFDLFVBQVUsRUFBRSxDQUFDO1FBQ3ZCLE9BQU8sQ0FBQyxVQUFVLEdBQUcsR0FBRyxDQUFDLEtBQUssQ0FBQyxVQUFVLENBQUE7SUFDN0MsQ0FBQztJQUVELE1BQU0sQ0FBQyxPQUFPLEVBQUUsS0FBSyxDQUFDLEdBQUcsTUFBTSxtQkFBbUIsQ0FBQyxtQkFBbUIsQ0FDbEUsT0FBTyxFQUNQO1FBQ0ksSUFBSSxFQUFFLE1BQU0sQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxJQUFJLEVBQUU7UUFDbkMsSUFBSSxFQUFFLE1BQU0sQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUM7UUFDbkMsS0FBSyxFQUFFLEVBQUUsVUFBVSxFQUFFLE1BQU0sRUFBRTtLQUNoQyxDQUNKLENBQUE7SUFFRCxHQUFHLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxFQUFFLEtBQUssRUFBRSxDQUFDLENBQUE7QUFDaEMsQ0FBQyxDQUFBO0FBbEJZLFFBQUEsR0FBRyxPQWtCZjtBQUVZLFFBQUEsWUFBWSxHQUFHLEtBQUssQ0FBQSJ9

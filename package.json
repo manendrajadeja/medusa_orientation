@@ -17,15 +17,7 @@
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start": "medusa start",
     "dev": "medusa develop",
-    "job:sync": "npx medusa exec src/jobs/sync-products.ts",
-    "job:sync:dry": "SYNC_PRODUCTS_DRY_RUN=true npx medusa exec src/jobs/sync-products.ts",
-    "job:sync:dist": "npx medusa exec dist/jobs/sync-products.js",
-    "inspect:product": "npx medusa exec src/scripts/inspect-product.ts",
-    "create:from-mapped": "npx medusa exec src/scripts/create-from-mapped.ts",
-    "missing-products": "npx medusa exec src/scripts/missing-products.ts",
-    "link-categories": "npx medusa exec src/scripts/link-categories.ts",
-    "run-sync-full": "npx ts-node src/scripts/run-sync-full.ts",
-    "list-synced": "npx medusa exec src/scripts/list-synced.ts"
+    "job:sync": "npx medusa exec src/jobs/sync-products.ts"
   },
   "dependencies": {
     "@medusajs/admin-sdk": "2.12.4",

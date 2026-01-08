@@ -2,43 +2,25 @@
 // Production-ready product sync job
 
 import { MedusaContainer } from "@medusajs/framework/types"
-import { batchProductsWorkflow, createProductCategoriesWorkflow } from "@medusajs/medusa/core-flows"
-import { Modules } from "@medusajs/framework/utils"
-
-type DummyProduct = {
-  id: number
-  title: string
-  description: string
-  price: number
-  category?: string
-  thumbnail?: string
-  images?: string[]
-  discountPercentage?: number
-  rating?: number
-  stock?: number
-  brand?: string
-  weight?: number
-  sku?: string
-  warrantyInformation?: string
-  shippingInformation?: string
-  availabilityStatus?: string
-  reviews?: any[]
-  returnPolicy?: string
-  minimumOrderQuantity?: number
-  meta?: any
-  tags?: string[]
-}
+import { createProductCategoriesWorkflow } from "@medusajs/medusa/core-flows"
+import { importProductsWorkflow } from "../workflows/import-products"
+import {
+  DummyProduct,
+  mapProductToMedusaSchema,
+  queryExistingProducts,
+  slugify
+} from "../utils/sync-helpers"
 
 const DUMMY_API_BASE = "https://dummyjson.com/products"
+// CONFIGURATION:
+// Adjust these values in your .env file to tune performance.
+// SYNC_PRODUCTS_BATCH_SIZE: Number of products to process in one workflow run (Recommended: 10-50).
+// SYNC_PRODUCTS_MAX_RETRIES: How many times to retry a failed fetch or workflow step.
 const PAGE_LIMIT = 30
 const DEFAULT_BATCH_SIZE = Number(process.env.SYNC_PRODUCTS_BATCH_SIZE) || 15
 const DEFAULT_MAX_RETRIES = Number(process.env.SYNC_PRODUCTS_MAX_RETRIES) || 2
-const DRY_RUN = process.env.SYNC_PRODUCTS_DRY_RUN === "true"
-const VERBOSE = process.env.SYNC_PRODUCTS_VERBOSE === "true"
-// Run every 2 minutes by default (can be overridden via SYNC_PRODUCTS_SCHEDULE)
-const DEFAULT_SCHEDULE = process.env.SYNC_PRODUCTS_SCHEDULE || "*/2 * * * *" // every 2 minutes
-// Default max retries for network/workflow operations is 2 (can be overridden via SYNC_PRODUCTS_MAX_RETRIES)
-const PAGE_DELAY_MS = Number(process.env.SYNC_PRODUCTS_PAGE_DELAY_MS) || 0
+const DRY_RUN = process.env.SYNC_PRODUCTS_DRY_RUN === "true" // Set to "true" to fetch data without writing to DB.
+const PAGE_DELAY_MS = Number(process.env.SYNC_PRODUCTS_PAGE_DELAY_MS) || 0 // Add delay between pages to avoid rate limits.
 
 function sleep(ms: number) {
   return new Promise((res) => setTimeout(res, ms))
@@ -101,65 +83,6 @@ export async function* fetchAllProducts() {
     // Respect optional page delay to avoid rate-limits
     if (PAGE_DELAY_MS > 0) await sleep(PAGE_DELAY_MS)
   }
-}
-
-function slugify(input: string) {
-  return input
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-") // collapse dashes
-}
-
-export function mapProductToMedusaSchema(product: DummyProduct) {
-  const handle = slugify(product.title)
-
-  // If product has no explicit options, we create a default option so the product
-  // passes Medusa's validation step (validateProductInputStep requires product options).
-  const defaultOption = { title: "Default", values: ["Default"] }
-
-  // Use images, fallback to thumbnail if empty
-  let images: { url: string }[] = []
-  if (product.images && product.images.length > 0) {
-    images = product.images.map((src) => ({ url: src }))
-  } else if (product.thumbnail) {
-    images = [{ url: product.thumbnail }]
-  }
-
-  // Calculate review stats if available (dummyjson products have 'rating' and 'reviews' array usually)
-  const reviewCount = product.reviews ? product.reviews.length : 0
-  const reviewAverage = product.rating || 0
-
-  const mapped: any = {
-    title: product.title,
-    description: product.description,
-    handle,
-    status: "published",
-    metadata: {
-      external_id: String(product.id),
-      external_category: product.category,
-      external_rating: String(reviewAverage),
-      reviews_count: reviewCount
-    },
-    options: [defaultOption],
-    variants: [
-      {
-        title: "Default",
-        // Map variant option values to match `options` above
-        options: { [defaultOption.title]: defaultOption.values[0] },
-        prices: [
-          {
-            amount: Math.round(product.price * 100),
-            currency_code: "usd",
-          },
-        ],
-      },
-    ],
-    images,
-  }
-
-  return mapped
 }
 
 export async function* batched<T>(iterable: AsyncIterable<T>, batchSize = DEFAULT_BATCH_SIZE) {
@@ -250,65 +173,6 @@ async function syncCategories(container: MedusaContainer) {
   }
 }
 
-// Enhanced query to find products by External ID OR Handle
-async function queryExistingProducts(container: MedusaContainer, externalIds: string[], handles: string[]) {
-  const products: any[] = []
-
-  // Attempt 1: Repository Query (fastest)
-  try {
-    const productRepository = container.resolve("productRepository") as any
-    if (productRepository && typeof productRepository.createQueryBuilder === "function") {
-      const qb = productRepository.createQueryBuilder("p")
-      qb.where("p.metadata ->> 'external_id' IN (:...ids)", { ids: externalIds })
-      qb.orWhere("p.handle IN (:...handles)", { handles })
-      return await qb.getMany()
-    }
-  } catch (err) {
-    // Repository access failed
-  }
-
-  // Attempt 2: Remote Query (Medusa v2 standard)
-  try {
-    const remoteQuery = container.resolve("remoteQuery")
-    if (remoteQuery) {
-      // Query by handle
-      const query = {
-        entryPoint: "product",
-        fields: ["id", "handle", "metadata"],
-        variables: {
-          filters: { handle: handles }
-        }
-      }
-      const result = await remoteQuery(query)
-      const byHandle = Array.isArray(result) ? result : (result.rows || result.data || [])
-
-      if (Array.isArray(byHandle)) {
-        products.push(...byHandle)
-      }
-    }
-  } catch (err) {
-    console.warn("Could not query existing products via remoteQuery:", err)
-  }
-
-  // Attempt 3: Legacy Service (fallback)
-  if (products.length === 0) {
-    try {
-      const key = Modules.PRODUCT
-      const productService = container.resolve(key) as any
-      // Check for listProducts (v2 module) or list (v1 service)
-      const listFn = productService.listProducts || productService.list
-      if (typeof listFn === "function") {
-        const byHandles = await listFn.bind(productService)({ handle: handles }, { take: handles.length })
-        products.push(...byHandles)
-      }
-    } catch (err) {
-      // ignore
-    }
-  }
-
-  return products
-}
-
 export default async function syncProductsJob(maybeContainer?: any) {
   console.log("Starting product sync...")
 
@@ -340,9 +204,7 @@ export default async function syncProductsJob(maybeContainer?: any) {
   // Clamp configured batch size into the recommended range (10-20)
   const requestedBatchSize = Number(process.env.SYNC_PRODUCTS_BATCH_SIZE) || DEFAULT_BATCH_SIZE
   const batchSize = Math.max(10, Math.min(20, requestedBatchSize))
-  if (requestedBatchSize !== batchSize) {
-    console.warn(`SYNC_PRODUCTS_BATCH_SIZE=${requestedBatchSize} adjusted to ${batchSize} to keep batch size within 10-20`)
-  }
+
   const createCount = { created: 0, updated: 0 }
   const syncedProducts: any[] = []
 
@@ -409,10 +271,15 @@ export default async function syncProductsJob(maybeContainer?: any) {
         continue
       }
 
+      const allBatchProducts = [...toCreate, ...toUpdate]
+
+      if (allBatchProducts.length === 0) continue
+
       // run workflow with retry
       const run = async () => {
-        const { result } = await batchProductsWorkflow(container).run({
-          input: { create: toCreate.length ? toCreate : undefined, update: toUpdate.length ? toUpdate : undefined },
+        // Using the new modular workflow
+        const { result } = await importProductsWorkflow(container).run({
+          input: { products: allBatchProducts }
         })
         return result
       }
@@ -439,7 +306,7 @@ export default async function syncProductsJob(maybeContainer?: any) {
       try {
         const fs = await import("fs/promises")
         const path = await import("path")
-        const exportDir = path.resolve(process.cwd(), "exports")
+        const exportDir = path.resolve(process.cwd(), "uploads", "sync-reports")
         await fs.mkdir(exportDir, { recursive: true })
 
         const timestamp = new Date().toISOString().replace(/[:.]/g, "-")
@@ -471,5 +338,8 @@ export default async function syncProductsJob(maybeContainer?: any) {
 
 export const config = {
   name: "sync-products",
-  schedule: DEFAULT_SCHEDULE,
+  // SCHEDULE: "*/2 * * * *" runs every 2 minutes.
+  // To change to daily at midnight, use: "0 0 * * *"
+  // To change to hourly, use: "0 * * * *"
+  schedule: "*/2 * * * *",
 }
